@@ -9,18 +9,15 @@ import java.util.Date;
 public class Product {
 
     @Id
-    private String id;  // MongoDB _id
-
+    private String id;
     private String ten;
-    private Integer gia;
-    private String urlImage;
+    private int gia;
+    private String hinhAnh;
     private String moTa;
-    private Boolean daXoa;
-    private Integer soLuong;
-    private Date ngayTao;
-    private Date ngayCapNhat;
+    private String danhMucId;
+    private boolean khuyenMai; // nullable
+    private int giamGia;
 
-    // Getter & Setter
     public String getId() {
         return id;
     }
@@ -37,20 +34,20 @@ public class Product {
         this.ten = ten;
     }
 
-    public Integer getGia() {
+    public int getGia() {
         return gia;
     }
 
-    public void setGia(Integer gia) {
+    public void setGia(int gia) {
         this.gia = gia;
     }
 
-    public String getUrlImage() {
-        return urlImage;
+    public String getHinhAnh() {
+        return hinhAnh;
     }
 
-    public void setUrlImage(String urlImage) {
-        this.urlImage = urlImage;
+    public void setHinhAnh(String hinhAnh) {
+        this.hinhAnh = hinhAnh;
     }
 
     public String getMoTa() {
@@ -61,50 +58,27 @@ public class Product {
         this.moTa = moTa;
     }
 
-    public Boolean getDaXoa() {
-        return daXoa;
+    public String getDanhMucId() {
+        return danhMucId;
     }
 
-    public void setDaXoa(Boolean daXoa) {
-        this.daXoa = daXoa;
+    public void setDanhMucId(String danhMucId) {
+        this.danhMucId = danhMucId;
     }
 
-    public Integer getSoLuong() {
-        return soLuong;
+    public boolean isKhuyenMai() {
+        return khuyenMai;
     }
 
-    public void setSoLuong(Integer soLuong) {
-        this.soLuong = soLuong;
+    public void setKhuyenMai(boolean khuyenMai) {
+        this.khuyenMai = khuyenMai;
     }
 
-    public Date getNgayTao() {
-        return ngayTao;
+    public int getGiamGia() {
+        return giamGia;
     }
 
-    public void setNgayTao(Date ngayTao) {
-        this.ngayTao = ngayTao;
-    }
-
-    public Date getNgayCapNhat() {
-        return ngayCapNhat;
-    }
-
-    public void setNgayCapNhat(Date ngayCapNhat) {
-        this.ngayCapNhat = ngayCapNhat;
-    }
-
-    @Override
-    public String toString() {
-        return "Product{" +
-                "id='" + id + '\'' +
-                ", ten='" + ten + '\'' +
-                ", gia=" + gia +
-                ", urlImage='" + urlImage + '\'' +
-                ", moTa='" + moTa + '\'' +
-                ", daXoa=" + daXoa +
-                ", soLuong=" + soLuong +
-                ", ngayTao=" + ngayTao +
-                ", ngayCapNhat=" + ngayCapNhat +
-                '}';
+    public void setGiamGia(int giamGia) {
+        this.giamGia = giamGia;
     }
 }

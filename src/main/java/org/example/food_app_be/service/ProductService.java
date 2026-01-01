@@ -19,9 +19,7 @@ public class ProductService {
     public  Product save(Product product){
         return productRepository.save(product);
     }
-    public Optional<Product> findByName(String name){
-        return productRepository.findByName(name);
-    }
+
     public Optional<Product> findById(String id){
         return productRepository.findById(id);
     }

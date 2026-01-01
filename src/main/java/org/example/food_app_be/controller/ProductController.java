@@ -23,6 +23,7 @@ public class ProductController {
 
     @GetMapping("/search")
     public Optional<Product> findByName(@RequestParam String name){
-        return this.productService.findByName(name);
+//        return this.productService.findByName(name);
+        return null;
     }
 }

@@ -13,6 +13,7 @@ public class User {
 
     private String ten;
     private String email;
+    private String password;
     private String soDienThoai;
     private String rule; // user / admin
     private Boolean trangThaiHoatDong;
@@ -41,6 +42,14 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String getSoDienThoai() {
