@@ -2,6 +2,7 @@ package org.example.food_app_be.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.bson.types.ObjectId;
 
 import java.util.Date;
 
@@ -14,7 +15,7 @@ public class Product {
     private int gia;
     private String hinhAnh;
     private String moTa;
-    private String danhMucId;
+    private ObjectId danhMucId;
     private boolean khuyenMai; // nullable
     private int giamGia;
 
@@ -58,11 +59,11 @@ public class Product {
         this.moTa = moTa;
     }
 
-    public String getDanhMucId() {
+    public ObjectId getDanhMucId() {
         return danhMucId;
     }
 
-    public void setDanhMucId(String danhMucId) {
+    public void setDanhMucId(ObjectId danhMucId) {
         this.danhMucId = danhMucId;
     }
 
